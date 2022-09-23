@@ -14,7 +14,7 @@ services:
       - data:/data
     environment:
       - RABBITMQ_DEFAULT_USER=admin
-      - RABBITMQ_DEFAULT_PASS=password
+      - RABBITMQ_DEFAULT_PASS=admin
 
 networks:
   default:
