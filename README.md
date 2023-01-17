@@ -1,6 +1,6 @@
 # 🎉 Docker RabbitMQ
 
-RabbitMQ is open source message broker software (sometimes called message-oriented middleware) that implements the Advanced Message Queuing Protocol (AMQP). The RabbitMQ server is written in the Erlang programming language and is built on the Open Telecom Platform framework for clustering and failover. Client libraries to interface with the broker are available for all major programming languages.
+RabbitMQ is a message broker software that facilitates communication between applications by sending and receiving messages. It supports AMQP and is open-source, reliable, scalable, and portable.
 
 ![version](https://img.shields.io/badge/version-1.0-blue)
 ![rating](https://img.shields.io/badge/rating-★★★★★-yellow)
