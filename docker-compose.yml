@@ -5,18 +5,15 @@ services:
     container_name: rabbitmq
     restart: always
     ports:
-      - 4369:4369
-      - 5671:5671
-      - 5672:5672
-      - 15671:15671
-      - 15672:15672
+      - ${APP_PORT}:15672
+      - ${AMQP_PORT}:5672
     networks:
       - default
     volumes:
       - data:/data
     environment:
-      - RABBITMQ_DEFAULT_USER=admin
-      - RABBITMQ_DEFAULT_PASS=admin
+      - RABBITMQ_DEFAULT_USER=${APP_USER}
+      - RABBITMQ_DEFAULT_PASS=${APP_PASS}
 
 networks:
   default:
