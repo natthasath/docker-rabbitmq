@@ -5,8 +5,11 @@ services:
     container_name: rabbitmq
     restart: always
     ports:
-      - ${APP_PORT}:15672
-      - ${AMQP_PORT}:5672
+      - ${HTTP_PORT}:15671
+      - ${HTTPS_PORT}:15672
+      - ${AMQP_PORT}:5671
+      - ${AMQPS_PORT}:5672
+      - ${EPMD_PORT}:4369
     networks:
       - default
     volumes:
