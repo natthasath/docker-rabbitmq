@@ -20,8 +20,10 @@ services:
 
 networks:
   default:
+    name: docker_rabbitmq_network
     driver: bridge
 
 volumes:
   data:
+    name: docker_rabbitmq_data
     driver: local
